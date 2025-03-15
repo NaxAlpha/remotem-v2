@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "My Remotion video",
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "dev": "pnpm exec remotion studio",
+    "build": "pnpm exec remotion bundle",
+    "upgrade": "pnpm exec remotion upgrade",
+    "lint": "pnpm exec eslint src && pnpm exec tsc",
+    "render-images": "pnpm dlx tsx src/render.ts",
+    "render-video": "pnpm exec remotion render"
   },
   "repository": {},
   "license": "UNLICENSED",
