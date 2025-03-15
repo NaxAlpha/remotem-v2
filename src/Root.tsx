@@ -1,3 +1,4 @@
+import './index.css';
 import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 
@@ -20,9 +21,6 @@ export const RemotionRoot: React.FC = () => {
         schema={myCompSchema}
         defaultProps={{
           titleText: "Welcome to Remotion",
-          titleColor: "#000000",
-          logoColor1: "#91EAE4",
-          logoColor2: "#86A8E7",
         }}
       />
     </>
