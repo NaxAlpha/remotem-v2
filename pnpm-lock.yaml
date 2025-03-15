@@ -8,10 +8,16 @@ importers:
 
   .:
     dependencies:
+      '@remotion/captions':
+        specifier: ^4.0.278
+        version: 4.0.278
       '@remotion/cli':
         specifier: ^4.0.278
         version: 4.0.278(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@remotion/google-fonts':
+        specifier: ^4.0.278
+        version: 4.0.278(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@remotion/media-utils':
         specifier: ^4.0.278
         version: 4.0.278(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@remotion/paths':
@@ -604,6 +610,9 @@ packages:
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
+
+  '@remotion/captions@4.0.278':
+    resolution: {integrity: sha512-WdSOQXXeqQzo+a0zq0SoZmbjE58NDbCkdQzFOo8xAABqQt+qw8ZV5rwQS+myvm3DxsdKEErcCJZuVebM+9SDaA==}
 
   '@remotion/cli@4.0.278':
     resolution: {integrity: sha512-3sE/TzMMFQjeFZO28pqPiOZBLMKB/RzDuW/IwSu78SiOvxlSj5Xeb6eBJL1n7IdKVYiZ+oou/MnjNIx/eIvwkA==}
@@ -2624,6 +2633,8 @@ snapshots:
       - uglify-js
       - utf-8-validate
       - webpack-cli
+
+  '@remotion/captions@4.0.278': {}
 
   '@remotion/cli@4.0.278(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
