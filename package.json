@@ -1,7 +1,7 @@
 {
-  "name": "template-helloworld",
+  "name": "movid-pro-base",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Base project for Movid.pro",
   "scripts": {
     "dev": "pnpm exec remotion studio",
     "build": "pnpm exec remotion bundle",
