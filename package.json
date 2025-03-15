@@ -26,10 +26,14 @@
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "^4.0.278",
+    "@remotion/renderer": "^4.0.278",
     "@remotion/tailwind-v4": "^4.0.278",
     "@types/react": "19.0.0",
     "@types/web": "0.0.166",
+    "commander": "^13.1.0",
     "eslint": "9.19.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
     "prettier": "3.3.3",
     "typescript": "5.5.4"
   },
