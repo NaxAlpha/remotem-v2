@@ -1,54 +1,85 @@
-# Remotion video
+# Movid.pro Base Project
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+A foundation project for creating programmatic videos using Remotion and React.
 
-Welcome to your Remotion project!
+## 🚀 Features
 
-## Commands
+- Built with Remotion v4.0
+- React 19.0 integration
+- Tailwind CSS v4 styling
+- TypeScript support
+- Zod schema validation for props
+- Preconfigured video settings (1920x1080, 30fps)
 
-**Install Dependencies**
+## 📋 Prerequisites
 
-```console
-npm install
+- Node.js (latest LTS version recommended)
+- pnpm package manager
+
+## 🛠️ Installation
+
+Clone the repository and install dependencies:
+
+```bash
+# Install dependencies
+pnpm install
 ```
 
-**Start Preview**
+## 💻 Development
 
-```console
-npm run dev
+Start the Remotion Studio for development:
+
+```bash
+pnpm dev
 ```
 
-**Render video**
+This will open Remotion Studio in your browser where you can preview and interact with your compositions.
 
-```console
-npx remotion render
+## 🎬 Project Structure
+
+- `src/HelloWorld.tsx` - Example component with Tailwind styling
+- `src/Root.tsx` - Main composition setup
+- `src/index.ts` - Entry point that registers the root component
+- `remotion.config.ts` - Remotion configuration including Tailwind setup
+
+## 🔧 Available Scripts
+
+- `pnpm dev` - Start Remotion Studio for development
+- `pnpm build` - Bundle the project for production
+- `pnpm upgrade` - Upgrade Remotion packages
+- `pnpm lint` - Run ESLint and TypeScript type checking
+- `pnpm render-images` - Render still images using custom script
+- `pnpm render-video` - Render video using Remotion renderer
+
+## 🎨 Customization
+
+Edit the `HelloWorld.tsx` component to create your own videos. Customize the props schema using Zod to create type-safe compositions.
+
+```tsx
+// Example of customizing the schema
+export const myCompSchema = z.object({
+  titleText: z.string(),
+  backgroundColor: z.string().optional().default("#ffffff"),
+  // Add more properties as needed
+});
 ```
 
-**Upgrade Remotion**
+## 📝 Configuration
 
-```console
-npx remotion upgrade
-```
+The project is configured with:
+- JPEG image format for video frames
+- Tailwind CSS support
+- Automatic output overwriting
 
-## Docs
+Adjust the configuration in `remotion.config.ts` as needed for your project.
 
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
+## 📚 Learn More
 
-## Help
+- [Remotion Documentation](https://www.remotion.dev/docs/)
+- [React Documentation](https://react.dev/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Zod Documentation](https://zod.dev/)
 
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
+## 📄 License
 
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+This project is licensed under the UNLICENSED license.
